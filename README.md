@@ -18,13 +18,11 @@ Note that this does not currently work with `cargo`.
 
 ### Install
 
-`git clone https://github.com/Jdf2023/julia2rust/tree/main`
+    git clone https://github.com/Jdf2023/julia2rust/tree/main
 
-`cd julia2rust`
+    cd julia2rust
 
-`nimble build` for debug build
-
-`nimble build -d:release` for release build
+    nimble build -d:release
 
 ## Roadmap
 
