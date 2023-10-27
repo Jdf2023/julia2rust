@@ -37,6 +37,6 @@ Note also that this does not currently work with `cargo`.
  - [x] `function`
  - [x] `for in` loop
  - [x] `if` statement
- - [x] `=` Assignment
- - [ ] All others
+ - [x] `=` Variable assignment
+ - [ ] All other Julia constructs
  - [ ] Support for multiple communicating files.
