@@ -61,7 +61,7 @@ proc translate(juliaFile: string) =
         elif line.contains("else"): rustFile.write(line, "{\n")
 
         elif line.contains("for") and line.contains(":"):
-            rustFile.write(line.replace(" : ", " .. "))
+            rustFile.write(line.replace(":", ".."))
             rustFile.writeLine(" {")
 
         elif line.contains("for") and ":" notin line:

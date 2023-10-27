@@ -14,7 +14,9 @@ This accepts a Julia file (currently) as input and outputs Rust file of the same
 
 There must be exactly one `main` Julia function which will be translated to `main` function in the generated Rust file which serves as the entry point of every Rust program.
 
-Note that this does not currently work with `cargo`.
+Note that, for the time being, all variables in the generated Rust file are mutable by default due to the nature of Julia.
+
+Note also that this does not currently work with `cargo`.
 
 #### Install
 
