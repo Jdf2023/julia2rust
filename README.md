@@ -13,7 +13,7 @@ An inefficient one-filer Julia to Rust transpiler.
 
 * There must be exactly one `main` function in the Julia file to be translated to one `main` function which will serve as the entry point of the generated Rust file.
 
-* `for =` loop does not work and will never be supported in the distant future. Use `for in` loop either.
+* `for =` loop does not work and will never be supported in the distant future. Use `for in` loop instead.
 
 #### Install
 
@@ -33,7 +33,7 @@ An inefficient one-filer Julia to Rust transpiler.
 
  - [x] `function`
  - [x] `for in` loop
- - [x] `if` statement
+ - [x] `if elseif else` statement
  - [x] `=` Variable assignment
  - [ ] All other Julia constructs
  - [ ] Support for multiple communicating files.
