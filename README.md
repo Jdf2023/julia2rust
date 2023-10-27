@@ -5,7 +5,7 @@ An inefficient one-filer Julia to Rust transpiler.
 ## Documentation
 
 Usage:
-    julia2rust [file.jl]
+    julia2rust <file.jl>
 
 ### Install
 
