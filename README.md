@@ -7,7 +7,7 @@ An inefficient one-filer Julia to Rust transpiler.
 
 ### Usage:
 
-    `julia2rust file.jl`
+    julia2rust file.jl
 
 
 This accepts a Julia file (currently) as input and outputs Rust file of the same name on the same directory as the input Julia file.
@@ -34,3 +34,4 @@ Note that this does not currently work with `cargo`.
  - [x] `=` Assignment
  - [ ] All others
  - [ ] Support for multiple communicating files.
+ 
