@@ -6,6 +6,7 @@ An inefficient one-filer Julia to Rust transpiler.
 
 
 ### Usage:
+
     `julia2rust file.jl`
 
 
@@ -17,7 +18,9 @@ Note that this does not currently work with `cargo`.
 
 ### Install
 
-`git clone https://github.com/Jdf2023/julia2rust/tree/main`
+```
+git clone https://github.com/Jdf2023/julia2rust/tree/main
+```
 
 `cd julia2rust`
 
