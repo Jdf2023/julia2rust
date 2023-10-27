@@ -7,7 +7,7 @@ An inefficient one-filer Julia to Rust transpiler.
 Usage:
     julia2rust <file.jl>
 
-This accepts a file named <file.jl> and outputs a file named <file.rs> to the same directory where the <file.jl> resides. The generated <file.rs> can then be fed to the Rust compiler, `rustc`, for compilation.
+This accepts a file `file.jl` and outputs a file named `file.rs` to the same directory where the `file.jl` resides. The generated `file.rs` can then be fed to the Rust compiler, `rustc`, for compilation.
 
 Note that currently, this does not work with `cargo`.
 
