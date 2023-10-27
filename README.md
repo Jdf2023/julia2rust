@@ -12,13 +12,13 @@ An inefficient one-filer Julia to Rust transpiler.
 
 This accepts a Julia file (currently) as input and outputs Rust file of the same name on the same directory as the input Julia file.
 
-There must be exactly one `main` Julia function which will be translated to `main` function in the generated rust file which serves as the entry point of every Rust program.
+There must be exactly one `main` Julia function which will be translated to `main` function in the generated Rust file which serves as the entry point of every Rust program.
 
 Note that this does not currently work with `cargo`.
 
 #### Install
 
-###### Download
+##### Download
     git clone https://github.com/Jdf2023/julia2rust/tree/main
 
 ##### Go inside the directory
