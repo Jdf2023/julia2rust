@@ -72,10 +72,9 @@ proc translate(juliaFile: string) =
 
 let args = commandLineParams()
 
-if args.len() == 0:
-    help()
-else:
+if args.len() == 1:
     let juliaFile = args[0]
     if juliaFile[juliaFile.len() - 3 .. juliaFile.len() - 1] == ".jl":
         translate(juliaFile)
     else: help()
+else: help()
