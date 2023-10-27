@@ -5,7 +5,7 @@ An inefficient one-filer Julia to Rust transpiler.
 ## Documentation
 
 
-### Usage:
+#### Usage:
 
     julia2rust file.jl
 
@@ -16,18 +16,18 @@ There must be exactly one `main` Julia function which will be translated to `mai
 
 Note that this does not currently work with `cargo`.
 
-### Install
+#### Install
 
-#### Download
+###### Download
     git clone https://github.com/Jdf2023/julia2rust/tree/main
-    
-#### Go inside the directory
+
+##### Go inside the directory
     cd julia2rust
 
-#### Build in debug mode
+##### Build in debug mode
     nimble build
 
-#### Build in release mode
+##### Build in release mode
     nimble build -d:release
 
 ## Roadmap
