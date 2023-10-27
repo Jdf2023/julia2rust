@@ -21,7 +21,7 @@ Note also that this does not currently work with `cargo`.
 #### Install
 
 ##### Download
-    git clone https://github.com/Jdf2023/julia2rust/tree/main
+    git clone https://github.com/Jdf2023/julia2rust
 
 ##### Go inside the directory
     cd julia2rust
