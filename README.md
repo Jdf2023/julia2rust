@@ -5,11 +5,11 @@ An inefficient one-filer Julia to Rust transpiler.
 ## Documentation
 
 Usage:
-    `julia2rust file1.jl file2.jl file3.jl ... `
+    `julia2rust file.jl`
 
-This accepts julia file/s as input/s and outputs rust file/s of the same name on the same directory as the input julia file/s.
+This accepts julia file as input and outputs rust file of the same name on the same directory as the input julia file.
 
-There must at least one `main` julia function which will be translated to `main` function in the generated rust file which serves as the entry point of every rust program.
+There must be exactly one `main` julia function which will be translated to `main` function in the generated rust file which serves as the entry point of every rust program.
 
 Note that this does not currently work with `cargo`.
 
@@ -30,3 +30,4 @@ Note that this does not currently work with `cargo`.
  - [x] `if` statement
  - [x] `=` Assignment
  - [ ] All others
+ - [ ] Support for multiple communicating files.
