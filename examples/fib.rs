@@ -8,7 +8,7 @@ fn main() {
 fn fib(n: i64) -> i64 {
 	if n == 0 {
 		return 0;
-	} 	else if n == 1 {
+	} 	else if n == 1 {
 		return 1;
 	} 	else {
 		return fib(n - 2) + fib(n - 1);
