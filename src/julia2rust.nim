@@ -20,19 +20,19 @@ proc translate(juliaFile: string) =
             rustFile.writeLine(" {")
 
         elif line.contains("function") and line.contains("::UInt64") and line.contains(")::UInt64"):
-            rustFile.write(line.multiReplace(("function", "pub fn"), ("::UInt64", ": u64"), (")::UInt64", ") -> u64")))
+            rustFile.write(line.multiReplace(("function", "fn"), ("::UInt64", ": u64"), (")::UInt64", ") -> u64")))
             rustFile.writeLine(" {")
 
         elif line.contains("function") and line.contains(" :: UInt64") and line.contains(") :: UInt64"):
-            rustFile.write(line.multiReplace(("function", "pub fn"), (" :: UInt64", ": u64"), (") :: UInt64", ") -> u64")))
+            rustFile.write(line.multiReplace(("function", "fn"), (" :: UInt64", ": u64"), (") :: UInt64", ") -> u64")))
             rustFile.writeLine(" {")
 
         elif line.contains("function") and line.contains("::Int64") and line.contains(")::Int64"):
-            rustFile.write(line.multiReplace(("function", "pub fn"), ("::Int64", ": i64"), (")::Int64", ") -> i64")))
+            rustFile.write(line.multiReplace(("function", "fn"), ("::Int64", ": i64"), (")::Int64", ") -> i64")))
             rustFile.writeLine(" {")
 
         elif line.contains("function") and line.contains(") :: Int64") and line.contains(" :: Int64"):
-            rustFile.write(line.multiReplace(("function", "pub fn"), (") :: Int64", ") -> i64"), (" :: Int64", ": i64")))
+            rustFile.write(line.multiReplace(("function", "fn"), (") :: Int64", ") -> i64"), (" :: Int64", ": i64")))
             rustFile.writeLine(" {")
 
         elif line.contains(" = "):
