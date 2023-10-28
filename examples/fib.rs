@@ -5,7 +5,7 @@ fn main() {
 	}
 }
 
-pub fn fib(n: i64) -> i64 {
+fn fib(n: i64) -> i64 {
 	if n == 0 {
 		return 0;
 	}	else if n == 1 {
