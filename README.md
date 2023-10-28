@@ -4,10 +4,11 @@ An inefficient one-filer Julia to Rust transpiler.
 
 ## Documentation
 
-
 #### Usage:
 
     julia2rust file.jl
+
+How this works is basically rewriting the Julia file to Rust file line by line.  So this does not need to be really optimized.
 
 #### Key points for the time being
 
