@@ -51,7 +51,7 @@ proc translate(juliaFile: string) =
             rustFile.write(line)
             rustFile.writeLine(";")
 
-        elif line.contains("end"): rustFile.writeLine(line.replace("end", "}"))
+        elif line.contains("end\n"): rustFile.writeLine(line.replace("end\n", "}\n"))
 
         elif line.contains("if") and "else" notin line: rustFile.write(line, " {\n")
 
@@ -68,7 +68,9 @@ proc translate(juliaFile: string) =
         elif line.contains("for") and ":" notin line:
             rustFile.write(line)
             rustFile.writeLine(" {")
-            
+
+
+
         else: rustFile.writeLine(line)
 
 let args = commandLineParams()
