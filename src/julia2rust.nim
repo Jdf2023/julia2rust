@@ -35,7 +35,7 @@ proc translate(juliaFile: string) =
             rustFile.write(line.multiReplace(("function", "fn"), (") :: Int64", ") -> i64"), (" :: Int64", ": i64")))
             rustFile.writeLine(" {")
 
-        elif line.contains(" = "):
+        elif line.contains(" = ") and "begin" notin line:
             rustFile.write("\tlet mut ", line)
             rustFile.writeLine(";")
 
@@ -68,6 +68,8 @@ proc translate(juliaFile: string) =
         elif line.contains("for") and ":" notin line:
             rustFile.write(line)
             rustFile.writeLine(" {")
+
+        elif line.contains("=") and line.contains("begin"): rustFile.writeLine("\tlet mut", line.replace("begin", "{"))
 
         else: rustFile.writeLine(line)
 

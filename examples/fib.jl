@@ -1,4 +1,11 @@
 function main()
+
+	z = begin
+		m = 5
+		n = 8
+		m + n
+	end
+
 	x = [0, 1, 2, 3, 4]
 	for i in x
 		println(fib(i))

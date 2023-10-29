@@ -1,4 +1,11 @@
 fn main() {
+
+	let mut 	z = {
+	let mut 		m = 5;
+	let mut 		n = 8;
+		m + n
+	};
+
 	let mut 	x = [0, 1, 2, 3, 4];
 	for i in x {
 		println!("{:?}", fib(i));
