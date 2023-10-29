@@ -1,10 +1,12 @@
 function main()
 
-	z = begin
+	z :: Float64 = begin
 		m = 5
 		n = 8
 		m / n
-	end
+	end;
+
+	println(z)
 
 	x = [0, 1, 2, 3, 4]
 	for i in x
@@ -12,7 +14,7 @@ function main()
 	end
 end
 
-function fib(n :: Int64) :: Int64
+function fib(n :: UInt64) :: UInt64
 	if n == 0
 		return 0
 	elseif n == 1
@@ -20,4 +22,8 @@ function fib(n :: Int64) :: Int64
 	else
 		return fib(n - 2) + fib(n - 1)
 	end
+end
+
+function showPi() :: Float64
+	return PI	
 end

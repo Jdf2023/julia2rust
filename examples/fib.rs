@@ -1,23 +1,31 @@
 fn main() {
 
-	let mut	z = {
-	let mut 		m = 5;
-	let mut 		n = 8;
+	let mut z: f64 = {
+	let mut m = 5.0;
+	let mut n = 8.0;
 		m / n
-	}
+	};
 
-	let mut 	x = [0, 1, 2, 3, 4];
+	println!("{:?}", z);
+
+	let mut x = [0, 1, 2, 3, 4];
 	for i in x {
 		println!("{:?}", fib(i));
 	}
 }
 
-fn fib(n: i64) -> i64 {
+fn fib(n: u64) -> u64 {
+
 	if n == 0 {
 		return 0;
-	}	else if n == 1 {
+	} else if n == 1 {
 		return 1;
-	}	else {
+	} else {
 		return fib(n - 2) + fib(n - 1);
 	}
+}
+
+fn showPi() -> f64 {
+
+	return std::f64::consts::PI	;
 }
