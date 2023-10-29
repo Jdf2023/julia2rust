@@ -1,6 +1,6 @@
 import os, strutils
 
-proc help() = echo "\nUsage:\n\tjulia2rust [file.jl]\n"
+proc help() = echo "\nUsage:\n\tjulia2rust file.jl\n"
 
 proc translate(juliaFile: string) =
 
