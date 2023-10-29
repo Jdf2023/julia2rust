@@ -24,8 +24,3 @@ fn fib(n: u64) -> u64 {
 		return fib(n - 2) + fib(n - 1);
 	}
 }
-
-fn showPi() -> f64 {
-
-	return std::f64::consts::PI	;
-}
